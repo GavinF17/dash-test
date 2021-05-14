@@ -11,10 +11,10 @@ function App() {
         "&redirect_uri=https://dash-test.gavinfenton.com/test" +
         "&scope=repo,repo_deployment,notifications,workflow"
 
-    const tryThis = () => fetch(ghurl, {mode: 'no-cors', redirect: 'follow'})
+    const tryThis = () => fetch(ghurl, {redirect: 'follow'})
         .then(response => {
-            console.log(response)
-            push(response.url)
+            // console.log(response)
+            // push(response.url)
         })
         .catch(console.error)
 
